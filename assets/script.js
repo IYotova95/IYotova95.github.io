@@ -20,7 +20,7 @@ $( document ).ready(function() {
 
 	$('a').click(
 	  function() {
-	    $('this').css('display', 'none');
+	    $('a').css('display', 'none');
 	  }
 	);
 
