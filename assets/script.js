@@ -6,21 +6,15 @@ $( document ).ready(function() {
 	  }
 	);
 
-});
-$( document ).ready(function() {
-
 	$('h3').hover(
 	  function() {
 	    $('h3').css('background-color', 'yellow');
 	  }
 	);
 
-});
-$( document ).ready(function() {
-
 	$('a').click(
 	  function() {
-	    $('this').css('display', 'none');
+	    $(this).css('display', 'none');
 	    return false;
 	  }
 	);
