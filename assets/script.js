@@ -18,9 +18,9 @@ $( document ).ready(function() {
 });
 $( document ).ready(function() {
 
-	$('this').click(
+	$('a').click(
 	  function() {
-	    $('a').css('display', 'none');
+	    $('this').css('display', 'none');
 	    return false;
 	  }
 	);
