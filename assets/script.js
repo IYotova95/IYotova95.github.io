@@ -16,3 +16,12 @@ $( document ).ready(function() {
 	);
 
 });
+$( document ).ready(function() {
+
+	$('a').click(
+	  function() {
+	    $('h3').css('display', 'none');
+	  }
+	);
+
+});
