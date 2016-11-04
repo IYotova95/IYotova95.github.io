@@ -21,6 +21,7 @@ $( document ).ready(function() {
 	$('a').click(
 	  function() {
 	    $('this').css('display', 'none');
+	    return false;
 	  }
 	);
 
