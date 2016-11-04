@@ -12,7 +12,7 @@ $( document ).ready(function() {
 	  }
 	);
 
-	$('a').click(
+	$('.wrapper').click(
 	  function() {
 	    $(this).css('display', 'none');
 	    return false;
