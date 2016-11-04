@@ -7,10 +7,10 @@ $( document ).ready(function() {
 	);
 
 });
-$(document).ready(function)) {
+$( document ).ready(function() {
 
 	$('h3').hover(
-		function) {
+		function() {
 		$('h3').css('background-color','yellow');
 	}
 );
