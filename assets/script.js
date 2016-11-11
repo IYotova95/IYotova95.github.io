@@ -11,6 +11,8 @@ $( document ).ready(function() {
 	var yPosition,xPosition,screenHeight,screenWidth,cssValue,lightnessValue,saturationValue,saturationRatio,lightnessRatio,hueValue,cssValue;
 
 	$('body').click(
+
+		console.log('hi');
 		function(event){
 			xPosition = event.pageX;
 			// get width of screen
