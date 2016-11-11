@@ -46,12 +46,12 @@ $( document ).ready(function() {
 	// if lightness is less than 50
 	if (lightnessValue < 50 ) {
 	// change all typeface to white
-		$('body').css('color',white)
+		$('body').css('color','white');
 	}
 	// if lightness is more than 50
 	if ( lightnessValue > 50 ) {
 	// change all typeface to black
-		$('body').css('color',black)
+		$('body').css('color','black');
 	}
 // 
 
