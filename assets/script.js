@@ -10,9 +10,7 @@ $( document ).ready(function() {
 // get horizontal position from event
 	var yPosition,xPosition,screenHeight,screenWidth,cssValue,lightnessValue,saturationValue,saturationRatio,lightnessRatio,hueValue,cssValue;
 
-	$('body').click(
-
-		console.log('hi');
+	$(document).click(
 		function(event){
 			xPosition = event.pageX;
 			// get width of screen
@@ -30,32 +28,29 @@ $( document ).ready(function() {
 			// lightnessValue = proportion * 100
 			lightnessValue = lightnessRatio * 100;
 
+			hueValue = Math.random() * 360;
+			// plug in three values to css using string concatenation: +
+			// embed saturation value in css rule
+			cssValue = 'hsl('+hueValue+', '+saturationValue+'%, '+ lightnessValue%100 +'%)';
+			// change css rule for body with jquery	
+			// change the css value to color w new saturation.
+			$('body').css('background-color', cssValue);
+
+			// vertical position measures lightness
+			// if lightness is less than 50
+			if (lightnessValue < 50 ) {
+			// change all typeface to white
+				$('body').css('color','white');
+			}
+			// if lightness is more than 50
+			if ( lightnessValue > 50 ) {
+			// change all typeface to black
+				$('body').css('color','black');
+			}
 
 		}
 	);
 
-	hueValue = Math.random() * 360;
-	// plug in three values to css using string concatenation: +
-	// embed saturation value in css rule
-	cssValue = 'hsl('+hueValue+', '+saturationValue+'%, '+ (lightnessValue)%100 +'%)';
-	// change css rule for body with jquery	
-	// change the css value to color w new saturation.
-	$('body').css('background-color', cssValue);
-
-
-// 
-// vertical position measures lightness
-	// if lightness is less than 50
-	if (lightnessValue < 50 ) {
-	// change all typeface to white
-		$('body').css('color','white');
-	}
-	// if lightness is more than 50
-	if ( lightnessValue > 50 ) {
-	// change all typeface to black
-		$('body').css('color','black');
-	}
-// 
 
 });
 /*
