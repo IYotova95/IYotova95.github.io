@@ -13,13 +13,19 @@ $( document ).ready(function() {
 		$('body'),click(
 			function(event){
 				xPosition = event.pageX;
+				// get width of screen
 				screenWidth = $('body').width();
+				// divide position by width to get proportion
 				saturationRatio = xPosition/screenWidth;
+				// saturationvalue = proportion * 100
 				saturationValue = saturationRatio * 100;
-
+				// get vertical position from event
 				yPosition = event.pageY;
+				// get height of screen
 				screenHeight = $('body').height();
+				// divide position by height to get proportion
 				lightnessRatio = yPosition/screenHeight;
+				// lightnessValue = proportion * 100
 				lightnessValue = lightnessRatio * 100;
 
 
@@ -27,23 +33,13 @@ $( document ).ready(function() {
 		);
 
 		hueValue = Math.random() * 360;
-
+		// plug in three values to css using string concatenation: +
 		// embed saturation value in css rule
 		cssValue = 'hsl('+hueValue+', '+saturationValue+'%, '+ (lightnessValue)%100 +'%)';
 
 		// change the css value to color w new saturation.
 		$('body').css('background-color', cssValue);
 
-// get width of screen
-// divide position by width to get proportion
-// saturationvalue = proportion * 100
-// 
-// get vertical position from event
-// get height of screen
-// divide position by height to get proportion
-// lightnessValue = proportion * 100
-// 
-// plug in three values to css using string concatenation: +
 // change css rule for body with jquery
 // 
 // vertical position measures lightness
