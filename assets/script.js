@@ -7,8 +7,9 @@ $( document ).ready(function() {
 // hueValue = multiply proportion by 360 
 // 
 // when user clicks on page
-		var yPosition,xPosition,screenHeight,screenWidth,cssValue,lightnessValue,saturationValue,saturationRatio,lightnessRatio;
 // get horizontal position from event
+		var yPosition,xPosition,screenHeight,screenWidth,cssValue,lightnessValue,saturationValue,saturationRatio,lightnessRatio;
+
 		$('body'),click(
 			function(event){
 				xPosition = event.pageX;
@@ -104,5 +105,5 @@ $( document ).ready(function() {
 			$('body').css('background-color', cssValue);
 
 		}
-	);
-});
+	); 
+}); */
