@@ -8,7 +8,7 @@ $( document ).ready(function() {
 // 
 // when user clicks on page
 // get horizontal position from event
-		var yPosition,xPosition,screenHeight,screenWidth,cssValue,lightnessValue,saturationValue,saturationRatio,lightnessRatio,hueValue;
+		var yPosition,xPosition,screenHeight,screenWidth,cssValue,lightnessValue,saturationValue,saturationRatio,lightnessRatio,hueValue,cssValue;
 
 		$('body'),click(
 			function(event){
