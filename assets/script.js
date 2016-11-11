@@ -48,7 +48,7 @@ $( document ).ready(function() {
 // 
 // vertical position measures lightness
 	// if lightness is less than 50
-	if (lightnesValue < 50 ) {
+	if (lightnessValue < 50 ) {
 	// change all typeface to white
 		$('body').css('color',white)
 	}
