@@ -35,8 +35,9 @@ var characters = {
 
 	// change the characters to a random color, using hsl values
 	newColor: function() {
-		var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
-		$('.character').animate({color: hue}, 1000);
+		var changeColor = Math.random() *360;
+		var cssValue = 'hsl('+changeColor+')';
+		$('.character').css('color'.cssValue);
 		return undefined;
 	},
 	// characters.newSize();
