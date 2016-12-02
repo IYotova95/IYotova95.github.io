@@ -4,6 +4,7 @@ title: Pool
 permalink: /pool/
 ---
 <div id="content">
+
     <script>// declare namespace object
 var content = {};
 
@@ -67,13 +68,5 @@ content.text = {
 }
 
 </script>
-
-<style>
-.character {
-	position: absolute;
-	font-size: 60px;
-}
-</style>
-
 
   </div>
